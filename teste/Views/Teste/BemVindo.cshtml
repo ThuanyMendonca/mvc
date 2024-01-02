@@ -1,0 +1,18 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["title"] = "Bem vindo teste";
+}
+
+<h1>Bem vindo </h1>
+
+Olá: @ViewData["Nome"]
+
+@if (ViewData["Numero"] != null)
+{
+    @for (int i = 0; i < Convert.ToInt64(ViewData["Numero"]); i++)
+    {
+        <span>|@i|</span>
+    }
+}
